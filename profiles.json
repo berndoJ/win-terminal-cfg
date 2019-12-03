@@ -1,88 +1,87 @@
-
-// To view the default settings, hold "alt" while clicking on the "Settings" button.
-// For documentation on these settings, see: https://aka.ms/terminal-documentation
+// Microsoft Windows-Terminal Profile Configuration File
+// Config by berndoJ / Johannes Berndorfer, 2019.
 
 {
-  "$schema": "https://aka.ms/terminal-profiles-schema",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
 
-  "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    // Default: WSL
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
 
-  "profiles": [
-    {
-      // Make changes here to the powershell.exe profile
-      "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-      "name": "Windows PowerShell",
-      "commandline": "powershell.exe",
-      "hidden": false,
-      "background": "#004cff",
-      "fontFace": "Fira Code",
-      "fontSize": 14,
-      "cursorColor": "#FFFFFF",
-      "cursorHeight": 25,
-      "cursorShape": "filledBox",
-      "padding": "5, 5, 5, 5",
-      "snapOnInput": true,
-      "acrylicOpacity": 0.8,
-      "useAcrylic": true
-    },
-    {
-      // Make changes here to the cmd.exe profile
-      "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-      "name": "Windows CMD",
-      "commandline": "cmd.exe",
-      "hidden": false,
-      "background": "#000000",
-      "fontFace": "Fira Code",
-      "fontSize": 14,
-      "cursorColor": "#FFFFFF",
-      "cursorHeight": 25,
-      "cursorShape": "filledBox",
-      "padding": "5, 5, 5, 5",
-      "snapOnInput": true,
-      "acrylicOpacity": 0.8,
-      "useAcrylic": true
-    },
-    {
-      "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-      "hidden": false,
-      "name": "Linux Ubuntu 18.04",
-      "source": "Windows.Terminal.Wsl",
-      "commandline":  "wsl.exe ~",
-      "background": "#222222",
-      "fontFace": "Fira Code",
-      "fontSize": 14,
-      "cursorColor": "#FFFFFF",
-      "cursorHeight": 25,
-      "cursorShape": "filledBox",
-      "padding": "5, 5, 5, 5",
-      "snapOnInput": true,
-      "acrylicOpacity": 0.8,
-      "useAcrylic": true
-    },
-    {
-      "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-      "hidden": false,
-      "name": "Azure Cloud Shell",
-      "source": "Windows.Terminal.Azure",
-      "background": "#004cff",
-      "fontFace": "Fira Code",
-      "fontSize": 14,
-      "cursorColor": "#FFFFFF",
-      "cursorHeight": 25,
-      "cursorShape": "filledBox",
-      "padding": "5, 5, 5, 5",
-      "snapOnInput": true,
-      "acrylicOpacity": 0.8,
-      "useAcrylic": true
-    }
-  ],
+    "profiles": [
+        {
+            // Windows Powershell Configuration
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false,
+            "background": "#004cff",
+            "fontFace": "Fira Code",
+            "fontSize": 14,
+            "cursorColor": "#FFFFFF",
+            "cursorHeight": 25,
+            "cursorShape": "filledBox",
+            "padding": "5, 5, 5, 5",
+            "snapOnInput": true,
+            "acrylicOpacity": 0.8,
+            "useAcrylic": true
+        },
+        {
+            // Windows Command Prompt Configuration
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "Windows CMD",
+            "commandline": "cmd.exe",
+            "hidden": false,
+            "background": "#000000",
+            "fontFace": "Fira Code",
+            "fontSize": 14,
+            "cursorColor": "#FFFFFF",
+            "cursorHeight": 25,
+            "cursorShape": "filledBox",
+            "padding": "5, 5, 5, 5",
+            "snapOnInput": true,
+            "acrylicOpacity": 0.8,
+            "useAcrylic": true
+        },
+        {
+            // Windows-Subsystem-For-Linux Ubuntu Shell Configuration
+            "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+            "hidden": false,
+            "name": "Linux Ubuntu 18.04",
+            "source": "Windows.Terminal.Wsl",
+            "commandline":  "wsl.exe ~",
+            "background": "#222222",
+            "fontFace": "Fira Code",
+            "fontSize": 14,
+            "cursorColor": "#FFFFFF",
+            "cursorHeight": 25,
+            "cursorShape": "filledBox",
+            "padding": "5, 5, 5, 5",
+            "snapOnInput": true,
+            "acrylicOpacity": 0.8,
+            "useAcrylic": true
+        },
+        {
+            // Microsoft Azure Cloud Shell Configuration
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure",
+            "background": "#004cff",
+            "fontFace": "Fira Code",
+            "fontSize": 14,
+            "cursorColor": "#FFFFFF",
+            "cursorHeight": 25,
+            "cursorShape": "filledBox",
+            "padding": "5, 5, 5, 5",
+            "snapOnInput": true,
+            "acrylicOpacity": 0.8,
+            "useAcrylic": true
+        }
+    ],
 
-  // Add custom color schemes to this array
-  "schemes": [
+    // Colour schemes
+    "schemes": [],
 
-  ],
-
-  // Add any keybinding overrides to this array.
-  // To unbind a default keybinding, set the command to "unbound"
-  "keybindings": []
+    // Keybindings
+    "keybindings": []
 }
